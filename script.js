@@ -38,6 +38,11 @@ fetch(URL)
       p.textContent = business[i].description;
       card.appendChild(p);
 
+      if (i % 2 == 0) {
+        card.classList.add("even");
+      } else {
+        card.classList.add("odd");
+      }
       document.querySelector("div.cards").appendChild(card);
     }
   });

@@ -2,8 +2,73 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-align: center;
+  z-index: 0;
 }
-
+body {
+  background-color: #9d8189;
+  border: 50px solid #f4acb7;
+  border-top: none;
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  background-color: #f4acb7;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header h1 {
+  display: inline;
+  color: #ffffff;
+}
+.cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .card {
-  border: 10px solid green;
+  border: 5px solid black;
+  margin: 20px;
+  max-width: 340px;
+}
+.card.even {
+  background-color: #ffe5d9;
+}
+/* .card.even img {
+  background-color: #ffcad4;
+}
+.card.odd img {
+  background-color: #ffe5d9;
+} */
+.card.odd {
+  background-color: #ffcad4;
+}
+.card img {
+  width: 300px;
+  height: 300px;
+  margin: 30px 0;
+  border: 5px solid black;
+}
+.card h2 {
+  background-color: #d8e2dc;
+  display: inline;
+  padding: 5px 20px;
+  position: relative;
+  top: 15px;
+}
+.card h3 {
+  background-color: #d8e2dc;
+}
+.card p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 22px;
+}
+@media screen and (max-width: 1999px) {
+  body {
+    width: 100vw;
+    height: auto;
+  }
 }
